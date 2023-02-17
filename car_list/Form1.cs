@@ -129,7 +129,7 @@ namespace car_list
 
 		private void deleteCarButton_Click(object sender, EventArgs e)
 		{
-			var car = carsListBox.SelectedItem as Car;
+			var car = selectCarComboBox.SelectedItem as Car;
 
 			cars.Remove(car);
 			UpdateCarsListBox();

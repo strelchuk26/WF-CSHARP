@@ -60,11 +60,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\WinForm\\car_list\\car_list.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\car_list\\car_list.csproj",
       "projectName": "car_list",
-      "projectPath": "C:\\Users\\LENOVO\\source\\repos\\WinForm\\car_list\\car_list.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\car_list\\car_list.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\source\\repos\\WinForm\\car_list\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\car_list\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
