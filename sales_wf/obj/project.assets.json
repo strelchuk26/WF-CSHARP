@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\WinForm\\sales_wf\\sales_wf.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\sales_wf\\sales_wf.csproj",
       "projectName": "sales_wf",
-      "projectPath": "C:\\Users\\LENOVO\\source\\repos\\WinForm\\sales_wf\\sales_wf.csproj",
+      "projectPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\sales_wf\\sales_wf.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\source\\repos\\WinForm\\sales_wf\\obj\\",
+      "outputPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\sales_wf\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
