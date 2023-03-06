@@ -36,3 +36,5 @@ C:\Users\LENOVO\Documents\GitHub\WF-CSHARP\shop_forms\shop_forms\obj\Debug\net5.
 C:\Users\LENOVO\Documents\GitHub\WF-CSHARP\shop_forms\shop_forms\obj\Debug\net5.0-windows\shop_forms.pdb
 C:\Users\LENOVO\Documents\GitHub\WF-CSHARP\shop_forms\shop_forms\obj\Debug\net5.0-windows\shop_forms.genruntimeconfig.cache
 C:\Users\LENOVO\Documents\GitHub\WF-CSHARP\shop_forms\shop_forms\obj\Debug\net5.0-windows\ref\shop_forms.dll
+C:\Users\LENOVO\Documents\GitHub\WF-CSHARP\shop_forms\shop_forms\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\LENOVO\Documents\GitHub\WF-CSHARP\shop_forms\shop_forms\obj\Debug\net5.0-windows\shop_forms.csproj.CopyComplete

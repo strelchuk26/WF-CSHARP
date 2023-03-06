@@ -39,7 +39,8 @@ namespace shop_forms
 		public ProductForm(string mode, Product product)
         {
             InitializeComponent();
-            label1.Text = mode;
+            UpdateCountryList();
+			label1.Text = mode;
             Product = product;
             UpdateInputs(Product);
         }

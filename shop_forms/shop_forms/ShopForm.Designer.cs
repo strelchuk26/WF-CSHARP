@@ -35,6 +35,10 @@ namespace shop_forms
 			this.editButton = new System.Windows.Forms.Button();
 			this.showButton = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
+			this.changeBgButton = new System.Windows.Forms.Button();
+			this.changeFontButton = new System.Windows.Forms.Button();
+			this.saveListButton = new System.Windows.Forms.Button();
+			this.loadListButton = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// addButton
@@ -42,7 +46,7 @@ namespace shop_forms
 			this.addButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(41)))), ((int)(((byte)(113)))));
 			this.addButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.addButton.ForeColor = System.Drawing.Color.White;
-			this.addButton.Location = new System.Drawing.Point(42, 92);
+			this.addButton.Location = new System.Drawing.Point(42, 95);
 			this.addButton.Name = "addButton";
 			this.addButton.Size = new System.Drawing.Size(159, 62);
 			this.addButton.TabIndex = 0;
@@ -53,11 +57,12 @@ namespace shop_forms
 			// productsList
 			// 
 			this.productsList.BackColor = System.Drawing.SystemColors.Control;
+			this.productsList.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.productsList.FormattingEnabled = true;
-			this.productsList.ItemHeight = 15;
-			this.productsList.Location = new System.Drawing.Point(246, 12);
+			this.productsList.ItemHeight = 25;
+			this.productsList.Location = new System.Drawing.Point(248, 12);
 			this.productsList.Name = "productsList";
-			this.productsList.Size = new System.Drawing.Size(346, 394);
+			this.productsList.Size = new System.Drawing.Size(558, 404);
 			this.productsList.TabIndex = 1;
 			// 
 			// removeButton
@@ -65,7 +70,7 @@ namespace shop_forms
 			this.removeButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(41)))), ((int)(((byte)(113)))));
 			this.removeButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.removeButton.ForeColor = System.Drawing.Color.White;
-			this.removeButton.Location = new System.Drawing.Point(42, 170);
+			this.removeButton.Location = new System.Drawing.Point(42, 180);
 			this.removeButton.Name = "removeButton";
 			this.removeButton.Size = new System.Drawing.Size(159, 62);
 			this.removeButton.TabIndex = 2;
@@ -78,7 +83,7 @@ namespace shop_forms
 			this.editButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(41)))), ((int)(((byte)(113)))));
 			this.editButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.editButton.ForeColor = System.Drawing.Color.White;
-			this.editButton.Location = new System.Drawing.Point(42, 247);
+			this.editButton.Location = new System.Drawing.Point(42, 266);
 			this.editButton.Name = "editButton";
 			this.editButton.Size = new System.Drawing.Size(159, 62);
 			this.editButton.TabIndex = 3;
@@ -91,7 +96,7 @@ namespace shop_forms
 			this.showButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(41)))), ((int)(((byte)(113)))));
 			this.showButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
 			this.showButton.ForeColor = System.Drawing.Color.White;
-			this.showButton.Location = new System.Drawing.Point(42, 325);
+			this.showButton.Location = new System.Drawing.Point(42, 354);
 			this.showButton.Name = "showButton";
 			this.showButton.Size = new System.Drawing.Size(159, 62);
 			this.showButton.TabIndex = 4;
@@ -110,12 +115,68 @@ namespace shop_forms
 			this.label1.TabIndex = 5;
 			this.label1.Text = "Shop";
 			// 
+			// changeBgButton
+			// 
+			this.changeBgButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(41)))), ((int)(((byte)(113)))));
+			this.changeBgButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.changeBgButton.ForeColor = System.Drawing.Color.White;
+			this.changeBgButton.Location = new System.Drawing.Point(248, 436);
+			this.changeBgButton.Name = "changeBgButton";
+			this.changeBgButton.Size = new System.Drawing.Size(122, 45);
+			this.changeBgButton.TabIndex = 6;
+			this.changeBgButton.Text = "CHANGE BG";
+			this.changeBgButton.UseVisualStyleBackColor = false;
+			this.changeBgButton.Click += new System.EventHandler(this.changeBgButton_Click);
+			// 
+			// changeFontButton
+			// 
+			this.changeFontButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(41)))), ((int)(((byte)(113)))));
+			this.changeFontButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.changeFontButton.ForeColor = System.Drawing.Color.White;
+			this.changeFontButton.Location = new System.Drawing.Point(395, 436);
+			this.changeFontButton.Name = "changeFontButton";
+			this.changeFontButton.Size = new System.Drawing.Size(122, 45);
+			this.changeFontButton.TabIndex = 7;
+			this.changeFontButton.Text = "CHANG FONT";
+			this.changeFontButton.UseVisualStyleBackColor = false;
+			this.changeFontButton.Click += new System.EventHandler(this.changeFontButton_Click);
+			// 
+			// saveListButton
+			// 
+			this.saveListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(41)))), ((int)(((byte)(113)))));
+			this.saveListButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.saveListButton.ForeColor = System.Drawing.Color.White;
+			this.saveListButton.Location = new System.Drawing.Point(540, 436);
+			this.saveListButton.Name = "saveListButton";
+			this.saveListButton.Size = new System.Drawing.Size(122, 45);
+			this.saveListButton.TabIndex = 8;
+			this.saveListButton.Text = "SAVE LIST";
+			this.saveListButton.UseVisualStyleBackColor = false;
+			this.saveListButton.Click += new System.EventHandler(this.saveListButton_Click);
+			// 
+			// loadListButton
+			// 
+			this.loadListButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(185)))), ((int)(((byte)(41)))), ((int)(((byte)(113)))));
+			this.loadListButton.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+			this.loadListButton.ForeColor = System.Drawing.Color.White;
+			this.loadListButton.Location = new System.Drawing.Point(684, 436);
+			this.loadListButton.Name = "loadListButton";
+			this.loadListButton.Size = new System.Drawing.Size(122, 45);
+			this.loadListButton.TabIndex = 9;
+			this.loadListButton.Text = "LOAD LIST";
+			this.loadListButton.UseVisualStyleBackColor = false;
+			this.loadListButton.Click += new System.EventHandler(this.loadListButton_Click);
+			// 
 			// ShopForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(29)))), ((int)(((byte)(40)))));
-			this.ClientSize = new System.Drawing.Size(603, 419);
+			this.ClientSize = new System.Drawing.Size(818, 504);
+			this.Controls.Add(this.loadListButton);
+			this.Controls.Add(this.saveListButton);
+			this.Controls.Add(this.changeFontButton);
+			this.Controls.Add(this.changeBgButton);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.showButton);
 			this.Controls.Add(this.editButton);
@@ -139,6 +200,10 @@ namespace shop_forms
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Button showButton;
         private System.Windows.Forms.Label label1;
-    }
+		private System.Windows.Forms.Button changeBgButton;
+		private System.Windows.Forms.Button changeFontButton;
+		private System.Windows.Forms.Button saveListButton;
+		private System.Windows.Forms.Button loadListButton;
+	}
 }
 
