@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\source\\repos\\WinForm\\EF_MusicProgram_02\\EF_MusicProgram.csproj": {}
+    "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\EF_MusicProgram_02\\EF_MusicProgram.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\source\\repos\\WinForm\\EF_MusicProgram_02\\EF_MusicProgram.csproj": {
+    "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\EF_MusicProgram_02\\EF_MusicProgram.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\WinForm\\EF_MusicProgram_02\\EF_MusicProgram.csproj",
+        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\EF_MusicProgram_02\\EF_MusicProgram.csproj",
         "projectName": "EF_MusicProgram",
-        "projectPath": "C:\\Users\\LENOVO\\source\\repos\\WinForm\\EF_MusicProgram_02\\EF_MusicProgram.csproj",
+        "projectPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\EF_MusicProgram_02\\EF_MusicProgram.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\source\\repos\\WinForm\\EF_MusicProgram_02\\obj\\",
+        "outputPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\WF-CSHARP\\EF_MusicProgram_02\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,12 @@
           "targetAlias": "net6.0-windows",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.3, )"
             }

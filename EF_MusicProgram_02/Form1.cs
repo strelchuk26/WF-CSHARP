@@ -3,9 +3,6 @@ using Microsoft.EntityFrameworkCore;
 
 namespace EF_MusicProgram
 {
-
-	// Трішки переробив структуру об'єктів, мені так зручніше.
-
 	public partial class Form1 : Form
 	{
 		MusicDbContext db = new MusicDbContext();
@@ -25,7 +22,6 @@ namespace EF_MusicProgram
 			{
 				playlists.Add
 				(
-					// Переробити копіювання треків з бази
 					new Playlist()
 					{
 						Name = p.Name,
@@ -83,16 +79,24 @@ namespace EF_MusicProgram
 				return;
 			}
 
-			var playlist = track.Playlist;
-
-			playlist.Tracks.Remove(track);
+			
 
 			tracklistBox.DataSource = null;
 			tracks.Clear();
 
-			foreach (var t in playlist.Tracks)
+			foreach (var t in track.Playlist.Tracks)
 			{
-				tracks.Add(t);
+				tracks.Add
+					(
+						new Track()
+						{
+							Name = t.Name,
+							Genre = new Genre() { Name = t.Genre.Name },
+							Duration = t.Duration,
+							Performer = new Performer() { Name = t.Performer.Name },
+							Playlist = t.Playlist
+						}
+					);
 			}
 
 			tracklistBox.DataSource = tracks;

@@ -35,6 +35,12 @@ namespace EF_MusicProgram
 				return;
 			}
 
+			Playlist = new Playlist()
+			{
+				Name = playlistNameTextBox.Text,
+				Tracks = null
+			};
+
 			AddTrackForm form = new AddTrackForm(Playlist);
 
 			if (form.ShowDialog() == DialogResult.OK)

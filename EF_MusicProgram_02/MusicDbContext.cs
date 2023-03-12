@@ -13,7 +13,7 @@ namespace EF_MusicProgram
         public MusicDbContext()
         {
             //Database.EnsureDeleted();
-            Database.EnsureCreated();
+            //Database.EnsureCreated();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

@@ -24,7 +24,10 @@ namespace EF_MusicProgram
 		public AddTrackForm(Playlist playlist)
 		{
 			InitializeComponent();
-			TrackPlaylist = playlist;
+			TrackPlaylist = new Playlist()
+			{
+				Name = playlist.Name
+			};
 		}
 
 		private void addTrackButton_Click(object sender, EventArgs e)
@@ -41,7 +44,7 @@ namespace EF_MusicProgram
 			{
 				Name = trackNameTextBox.Text,
 				Duration = (int)trackDuration.Value,
-				Performer = new Performer() { Name = performerTextBox.Text },
+				Performer = new Performer() { Name = performerTextBox.Text},
 				Genre = new Genre() { Name = genreTextBox.Text },
 				Playlist = TrackPlaylist
 			};

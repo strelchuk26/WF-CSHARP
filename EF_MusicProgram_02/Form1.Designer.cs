@@ -28,7 +28,6 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
 			this.tracklistBox = new System.Windows.Forms.ListBox();
 			this.panel1 = new System.Windows.Forms.Panel();
@@ -36,7 +35,6 @@
 			this.createPlaylistButton = new System.Windows.Forms.Button();
 			this.playlistListBox = new System.Windows.Forms.ListBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.imageList1 = new System.Windows.Forms.ImageList(this.components);
 			this.playlistName = new System.Windows.Forms.Label();
 			this.removeTrackButton = new System.Windows.Forms.Button();
 			this.panel1.SuspendLayout();
@@ -117,13 +115,6 @@
 			this.label1.TabIndex = 4;
 			this.label1.Text = "Tracks";
 			// 
-			// imageList1
-			// 
-			this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-			this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-			this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-			this.imageList1.Images.SetKeyName(0, "e34.jpg");
-			// 
 			// playlistName
 			// 
 			this.playlistName.AutoSize = true;
@@ -178,7 +169,6 @@
 		private ListBox playlistListBox;
 		private Button createPlaylistButton;
 		private Label label1;
-		private ImageList imageList1;
 		private Label playlistName;
 		private PictureBox pictureBox1;
 		private Button removeTrackButton;
